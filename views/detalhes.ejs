@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>detalhes</title>
+</head>
+<body>
+    <% if (produto === 'produto1') {%>
+        <h1 class="titulo">O produto escolhido foi <%=produtos.produto1%></h1> 
+        <img class="imagem" src="/images/8938d31b3c182eb867ccec9121932d71.jpg" alt="">
+    <% } else if (produto === 'produto2') {%>
+        <h1 class="titulo">O produto escolhido foi <%=produtos.produto2%></h1> 
+        <img class="imagem" src="/images/fb91911bea1973c30b526066d237420e.jpg" alt="">
+    <%} else { %>
+        <h1 class="titulo">O produto escolhido foi <%=produtos.produto3%></h1> 
+        <img class="imagem" src="/images/2cfd974080421dc0efd85e361fe5adb5.jpg" alt="">
+    <% } %>
+</body>
+</html>
