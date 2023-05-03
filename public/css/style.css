@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    background-color: #343a40;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 15%;
+    height: 15%;
+}
+nav{
+    align-content: center;
+}
