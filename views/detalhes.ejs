@@ -1,23 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/style.css">
-    <title>detalhes</title>
-</head>
-<body>
+<%- include('partials/head') %>
     
     <% if (produto === 'produto1') {%>
-        <h1 class="titulo">O produto escolhido foi <%=produtos.produto1%></h1> 
-        <img class="imagem" src="/images/8938d31b3c182eb867ccec9121932d71.jpg" alt="">
+        <h1 class="titulo"><%=produtos.produto1%></h1> 
+        <img class="imagem" id="image1" src="/images/bike2.jpg" alt=""
+        onMouseover="this.src= '/images/bike2-2.jpg' "
+onMouseout="this.src= '/images/bike2.jpg'  ">
+        <%- include('partials/bike1') %>
+
     <% } else if (produto === 'produto2') {%>
-        <h1 class="titulo">O produto escolhido foi <%=produtos.produto2%></h1> 
-        <img class="imagem" src="/images/fb91911bea1973c30b526066d237420e.jpg" alt="">
+        <h1 class="titulo"><%=produtos.produto2%></h1> 
+        <img class="imagem"  id="image2" src="/images/bike-rosa.jpg" alt=""
+        onMouseover="this.src= '/images/bike-rosa2.jpg' "
+        onMouseout="this.src= '/images/bike-rosa.jpg'  ">
+        <%- include('partials/bike2') %>
+
     <%} else { %>
-        <h1 class="titulo">O produto escolhido foi <%=produtos.produto3%></h1> 
-        <img class="imagem" src="/images/2cfd974080421dc0efd85e361fe5adb5.jpg" alt="">
+        <h1 class="titulo"><%=produtos.produto3%></h1> 
+        <img  class="imagem" id="image3"
+        src="/images/bike-preta.jpg" alt=""
+        onMouseover="this.src= '/images/bike-preta2.jpg' "
+        onMouseout="this.src= '/images/bike-preta.jpg'  ">
+        <%- include('partials/bike3') %>
+        
     <% } %>
+    
+    <%- include('partials/footer') %>
 </body>
+
 </html>

@@ -1,17 +1,305 @@
-body{
+body {
     display: flex;
     flex-direction: column;
 }
-.header{
+
+.header {
     display: flex;
     background-color: #343a40;
     align-items: center;
     justify-content: center;
+    position: fixed;
 }
-.logo{
+
+.btn.btn-outline-success {
+    color: #eba351;
+    border-color: #eba351;
+}
+
+.btn.btn-outline-success:hover {
+    background-color: #eba351;
+    border-color: #eba351;
+    color: #fff;
+}
+
+.logo {
+    width: 10%;
+    height: 10%;
+}
+
+.aba-site {
+    margin-top: 170px;
+    text-align: center;
+    border-bottom-color: #eba351;
+    border-bottom-style: solid;
+    padding: 20px;
+}
+
+.secao {
+    margin-top: 50px;
+   
+}
+
+.imagem-bike {
+    width: 40%;
+    margin: 0 50px 0 50px;
+}
+
+.confira {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #111111;
+    color: #fff;
+    justify-content: right;
+}
+
+.confira:hover {
+    opacity: 0.5;
+    background-color: darkgray;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.conteudo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.produto {
+    text-align: center;
+}
+
+.imagens-rodape {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.footer {
+    display: flex;
+    background-color: #343a40;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    width: 40rem;
+}
+
+.line {
+    display: flex;
+}
+
+#post-form {
+    padding: 15px;
+    color: #eba351;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
     width: 15%;
-    height: 15%;
+    font-size: 25px;
 }
-nav{
-    align-content: center;
+
+.social-media a {
+    color: #eba351;
+}
+
+/*DESTALHES*/
+
+.imagem {
+    margin-left: 20rem;
+    width: 50%;
+}
+
+.titulo {
+    margin: 15rem 0 0 15rem;
+    width: 60%;
+    font-size: 2rem;
+    padding: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: #eba351;
+}
+
+.detalhe {
+    margin: 50px 0 0 15rem;
+    padding: 20px;
+    width: 70%;
+    height: 60%;
+    text-align: justify;
+    border-top-style: solid;
+    border-top-color: #eba351;
+    line-height: 30px;
+
+
+}
+
+/*BOTAO codigo do uiverse.io*/
+
+.botao-form {
+    align-items: center;
+    background-color: transparent;
+    color: #eba351;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+}
+
+.botao-form:before {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25, .8, .25, 1);
+    width: 0;
+}
+
+.botao-form:hover:before {
+    background-color: #fff;
+    width: 3rem;
+}
+
+/*media queries*/
+
+@media(max-width:480px){
+    .aba-site{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .confira{
+        font-size:0.8rem;
+    }
+    .imagem-bike{
+        margin-top: 10px;
+        width: 80%;
+    }
+    #translate{
+        margin-top: 20px;
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    #botaoConfi{
+        width: 178px;
+        height: 49px;
+        margin-left: 7rem;
+    }
+    .imagens-rodape{
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+    .form{
+        flex-direction: column;
+        width: 90%;
+    }
+    .social-media{
+       width: 90%;
+       margin: 30px 0 30px 0;
+       justify-content: space-evenly;
+    }
+    .detalhe{
+        margin: 4.5rem;
+    }
+    .titulo{
+        margin-left: 4.5rem;
+        font-size: 1.5rem;
+    }
+    .imagem{
+        margin: 2.5rem;
+        width: 80%;
+    }
+    
+    
+}
+@media(min-width:481px){
+    body{
+        overflow-x: hidden; 
+    }
+    .imagens-rodape{
+        flex-wrap: wrap;
+    }
+    .img-rodape{
+        margin-bottom: 20px;
+    }
+    .form{
+        justify-content: start;
+    }
+    .mb-3{
+        margin-right: 5px;
+    }
+    .social-media{
+        width: 90%;
+       margin: 30px 0 30px 0;
+       justify-content: center;
+    }
+    .social-media a{
+        margin-right: 5px;
+    }
+    .aba-site{
+        margin-top: 0;
+    }
+    .detalhe{
+        margin-left: 6rem;
+    }
+    .titulo{
+        margin-top: 10rem;
+        margin-left: 5rem;
+    }
+    .imagem{
+        margin-left: 10rem;
+    }
+    
+}
+@media(min-width:761px){
+    .aba-site{
+        margin-top: 3.6rem;
+    }
+    .social-media{
+        width: 100%;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .social-media a{
+        margin-left: 5px;
+    }
+    .imagens-rodape{
+       flex-wrap: wrap;
+    }
+    .img-rodape{
+        margin-bottom: 20px;
+    }
+    .detalhe{
+        margin-left: 10rem;
+    }
+    .titulo{
+        margin-top: 20rem;
+    }
+    .imagem{
+        margin-left: 15rem;
+    }
+    
+
 }
