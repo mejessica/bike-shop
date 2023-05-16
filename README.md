@@ -24,4 +24,5 @@ Esse projeto foi uma proposta nova ao aprender nodejs, tentei usar grande parte 
 
 
 # Resultado final
+![Traker](https://github.com/mejessica/bike-shop/assets/82670472/e614e846-8438-4971-975e-0cf463f005e7)
 
