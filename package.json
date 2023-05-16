@@ -1,6 +1,13 @@
 {
   "dependencies": {
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "gh-pages": "^5.0.0"
+  },
+  "name": "bike-shop",
+  "homepage": "https://mejessica.github.io/bike-shop",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
