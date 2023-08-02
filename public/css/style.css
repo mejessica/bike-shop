@@ -28,11 +28,11 @@ body {
 }
 
 .aba-site {
-    margin-top: 170px;
+    margin-top: 6rem;
     text-align: center;
     border-bottom-color: #eba351;
     border-bottom-style: solid;
-    padding: 20px;
+    padding: 25px 0 15px 0;
 }
 
 .secao {
@@ -187,7 +187,7 @@ body {
 
 @media(max-width:480px){
     .aba-site{
-        margin-top: 1rem;
+        margin-top: 2.5rem;
         font-size: 1.5rem;
     }
     .confira{
@@ -259,7 +259,8 @@ body {
         margin-right: 5px;
     }
     .aba-site{
-        margin-top: 0;
+        margin-top: 3rem;
+        padding: 35px 0 15px 0;
     }
     .detalhe{
         margin-left: 6rem;
@@ -275,7 +276,8 @@ body {
 }
 @media(min-width:761px){
     .aba-site{
-        margin-top: 3.6rem;
+        margin-top: 6.5rem;
+        padding: 40px 0 25px 0;
     }
     .social-media{
         width: 100%;
@@ -302,4 +304,11 @@ body {
     }
     
 
+}
+
+@media(min-width:1500px){
+    .aba-site{
+        margin-top: 10rem;
+        padding: 40px 0 25px 0;
+    }
 }
